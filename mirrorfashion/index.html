@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8">
+     <title>Mirror Fashion</title>  
+     <link rel="stylesheet" href="estilos.css"> <!-- Associa a página de .html ao arquivo .css, para implementação -->
+  </head>
+  <body>
+   <header class="container"> <!-- Cabeçalho, contendo: logo principal da empresa, mensagem sobre sacola de compras e links de navegação -->
+     <h1><img src="img/logo.png" alt="Logo da Mirror Fashion"></h1> <!-- Colocando uma imagem como titulo principal da página -->
+      
+     <p class="sacola">
+       Nenhum item na sacola de compras <!-- É apenas uma frase informativa, um parágrafo de texto -->
+     </p>
+      
+     <nav class="menu-opcoes"> <!-- Blocos de navegação primários -->
+       <ul>
+         <li><a href="#">Sua Conta</a></li> <!-- Lista com links, para facilitar a navegação do usuário no site -->
+         <li><a href="#">Lista de Desejos</a></li>
+         <li><a href="#">Cartão Fidelidade</a></li>
+         <li><a href="sobre.html">Sobre</a></li>
+         <li><a href="#">Ajuda</a></li>
+       </ul>
+     </nav>
+    </header>
+      
+       <div class="container destaque">
+           
+         <section class="busca">
+           <h2>Busca</h2>
+           
+           <form>
+             <input type="search">
+             <input type="image" src="img/busca.png">
+           </form>
+           </section> <!-- fim .busca -->
+
+           <section class="menu-departamentos">
+             <h2>Departamentos</h2>
+               
+             <nav>
+               <ul>
+                 <li><a href="#">Blusas e Camisas</a></li>
+                 <li><a href="#">Calças</a></li>
+                 <li><a href="#">Saias</a></li>
+                 <li><a href="#">Vestidos</a></li>
+                 <li><a href="#">Sapatos</a></li>
+                 <li><a href="#">Bolsas e Carteiras</a></li>
+                 <li><a href="#">Acessórios</a></li>
+                </ul>
+             </nav>
+           </section> <!-- fim .menu-departamentos -->
+
+           <!-- <section class="banner-destaque">
+             <figure> -->
+               <img src="img/destaque-home.png" alt="Promoção: Big City Night">
+           <!-- </figure>
+           </section> <!-- fim .banner-destaque -->
+
+       </div> <!-- fim .container .destaque -->
+      
+      <!-- Vamos criar agora nossos painéis de novidades e mais vendidos. Crie um elemento <div> para
+       conter os dois painéis de produtos. Ele deve receber a classe container, para se alinhar ao meio da
+       tela, e a classe paineis que usaremos depois no CSS. -->
+      
+         <div class="container paineis"> <!-- os paineis  de novidades e mais vendidos entrarão aqui dentro -->
+            
+             <section class="painel novidades">
+             <h2>Novidades</h2>
+             <ol> <!-- Lista de Produtos - Novidades -->
+                <li> <!-- primeiro produto -->
+                  <a href="produto.html">
+                    <figure>
+                      <img src="img/produtos/miniatura1.png" alt="miniatura1">
+                      <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                    </figure>
+                  </a>
+                </li> <!-- fim do primeiro produto --> 
+                 
+                 <li> <!-- segundo produto -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura2.png" alt="miniatura2">
+                       <figcaption>Camiseta Feminina de Caveira por R$ 39,90</figcaption>
+                     </figure>
+                   </a>
+                 </li> <!-- fim do segundo produto -->
+                 
+                 <li> <!-- terceiro produto -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura3.png" alt="miniatura3">
+                       <figcaption>Blusa Fina Feminina por R$ 59,90</figcaption>
+                     </figure>  
+                   </a>
+                 </li> <!-- fim do terceiro produto -->
+                 
+                 <li> <!-- quarto produto -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura4.png" alt="miniatura4">
+                       <figcaption>Blusa de Frio por R$ 89,90</figcaption>
+                     </figure> 
+                   </a>
+                 </li> <!-- fim do quarto produto -->
+                 
+                 <li> <!-- quinto produto -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura5.png" alt="miniatura5">
+                       <figcaption>Regata Feminina por R$ 19,99</figcaption>
+                     </figure>
+                   </a>
+                 </li> <!-- fim do quinto produto -->
+                 
+                 <li> <!-- sexto produto -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura6.png" alt="miniatura6">
+                       <figcaption>Vestido Feminino por R$ 29,90</figcaption>
+                     </figure>
+                   </a>
+                 </li> <!-- fim do sexto produto -->
+             </ol> <!-- fim da lista de produtos novidades -->
+            </section> <!-- fim do painel novidades -->
+             
+             <section class="painel mais-vendidos">
+             <h2>Mais Vendidos</h2>
+             <ol> <!-- Lista de Produtos - Mais-Vendidos -->
+                <li> <!-- primeiro produto mais vendido -->
+                  <a href="produto.html">
+                    <figure>
+                      <img src="img/produtos/miniatura9.png" alt="miniatura1">
+                      <figcaption>Camiseta Feminina Xadrez por R$ 49,90</figcaption>
+                    </figure>
+                  </a>
+                </li> <!-- fim do primeiro produto mais vendido --> 
+                 
+                 <li> <!-- segundo produto mais vendido -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura10.png" alt="miniatura2">
+                       <figcaption>Camiseta Feminina Manga Longa por R$ 29,90</figcaption>
+                     </figure>
+                   </a>
+                 </li> <!-- fim do segundo produto mais vendido -->
+                 
+                 <li> <!-- terceiro produto mais vendido -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura11.png" alt="miniatura3">
+                       <figcaption>Shorts Feminino Verão por R$ 29,90</figcaption>
+                     </figure>  
+                   </a>
+                 </li> <!-- fim do terceiro produto mais vendido -->
+                 
+                 <li> <!-- quarto produto mais vendido -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura12.png" alt="miniatura4">
+                       <figcaption>Camiseta Feminina Lisa por R$ 29,90</figcaption>
+                     </figure> 
+                   </a>
+                 </li> <!-- fim do quarto produto mais vendido -->
+                 
+                 <li> <!-- quinto produto mais vendido -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura13.png" alt="miniatura5">
+                       <figcaption>Camiseta Feminina por R$ 19,99</figcaption>
+                     </figure>
+                   </a>
+                 </li> <!-- fim do quinto produto masi vendido -->
+                 
+                 <li> <!-- sexto produto mais vendido -->
+                   <a href="produto.html">
+                     <figure>
+                       <img src="img/produtos/miniatura14.png" alt="miniatura6">
+                       <figcaption>Camiseta Feminina por R$ 29,90</figcaption>
+                     </figure>
+                   </a>
+                 </li> <!-- fim do sexto produto mais vendidos -->
+             </ol> <!-- fim da lista de produtos mais vendidos -->
+            </section> <!-- fim do painel mais vendidos -->
+        </div> <!-- fim .container . paineis -->
+  </body>
+</html>

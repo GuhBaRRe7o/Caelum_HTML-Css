@@ -1,0 +1,143 @@
+body {
+color: #333333;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*A sacola também deve estar posicionada a direita e no topo. Use position , top e right para
+conseguir esse comportamento. */
+
+.sacola {
+position: absolute;
+top: 0;
+right: 0;
+    
+background-image: url(img/sacola.png);
+background-repeat: no-repeat;
+background-position: top right;
+
+   font-size: 14px;
+   padding-right: 35px;
+   text-align: right;
+   width: 140px;
+}
+
+/*Posicione o menu à direita e embaixo no header. Use position: absolute para isso. E não
+esqueça: se queremos posicioná-lo absolutamente com relação ao cabeçalho, o cabeçalho precisa estar
+com position: relative.*/
+
+header {
+    position: relative;
+}
+
+.menu-opcoes{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul li{
+  display: inline;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.menu-opcoes a {
+   color: #003366;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+
+.busca,
+.menu-departamentos {
+  background-color: #DCDCDC;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  margin-right: 10px;
+  width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+  margin: 10px;
+}
+
+.menu-departamentos li {
+  background-color: white;
+  margin-bottom: 1px;
+  padding: 5px 10px;
+}
+
+.menu-departamentos a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.busca input[type=search] { /* Tamanho do campo de texto para melhor encaixar no design */
+  width: 180px;
+}
+
+.busca,
+.menu-departamentos {
+  float: left; /* essa propriedade permite que tiremos um elemento do fluxo vertical da página e automaticamente faz com que o conteúdo que venha a seguir flutue ao seu redor */
+}
+
+.menu-departamentos {
+  clear: left; /*  ela especifica se um elemento deve ser posicionado ao lado de elementos com float ou se devem ser colocados abaixo deles. */
+}
+
+.destaque {
+  margin-top: 10px;
+}
+
+.menu-departamentos {
+  margin-top: 10px;
+  padding-bottom: 10px; 
+}
+
+/* O painel de novidades deve flutuar à esquerda e o mais-vendidos , à direita. Cada um deve ocupar 445px (pouco menos da metade dos 940px), assim um ficará ao lado do outro:*/
+.painel{
+  margin: 10px 0;
+  padding: 10px;
+  width: 445px;
+}
+
+.novidades {
+  float: left;
+  background-color: #F5DCDC; /* Cor de fundo */
+}
+
+.mais-vendidos {
+  float: right;
+  background-color: #DCDCF5;
+}
+
+/* Queremos que sejam dispostos lado a lado mas com certo tamanho e espaçamento para alinhamento. Conseguimos isso colocando display:inline-block nos elementos da lista e, para alinhar os produtos pelo topo, com vertical-align:top. */
+.painel li {
+  display: inline-block; 
+  vertical-align: top;
+  width: 140px;
+    
+  margin: 2px;
+  padding-bottom: 10px;
+}
+
+.painel h2 {
+  font-size: 24px; /* tamanho das letras */
+  font-weight: bold; /* cor das letras */
+  text-transform: uppercase; /* escrita tudo maiuscula */
+    
+  margin-bottom: 10px;
+}
+
+.painel a {
+  color: #333;
+  font-size: 12px;
+  text-align:center;
+  text-decoration:none;    
+}
